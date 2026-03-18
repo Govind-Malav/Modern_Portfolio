@@ -1,0 +1,33 @@
+[36mvite v8.0.0 [32mbuilding client environment for production...[36m[39m
+[2K
+<script src="js/main.js"> in "/index.html" can't be bundled without type="module" attribute
+transforming...Γ£ô 6 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                 89.24 kB Γöé gzip: 11.96 kB
+dist/assets/index-BTD-u4RW.css   3.82 kB Γöé gzip:  1.34 kB
+dist/assets/index-BvdWmNZ1.js    3.22 kB Γöé gzip:  1.48 kB
+
+Γ£ù Build failed in 100ms
+error during build:
+Build failed with 1 error:
+
+Error: [vite]: Rolldown failed to resolve import "three" from "C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio - Modern/js/three-bg.js".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+    at viteLog (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/vite/dist/node/chunks/node.js:32887:57)
+    at onRollupLog (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/vite/dist/node/chunks/node.js:32919:7)
+    at onLog (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/vite/dist/node/chunks/node.js:32688:4)
+    at file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/rolldown/dist/shared/rolldown-build-4YnQkA76.mjs:49:26
+    at logger (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/rolldown/dist/shared/rolldown-build-4YnQkA76.mjs:40:3)
+    at onLog (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/rolldown/dist/shared/bindingify-input-options-Cu7pt6SZ.mjs:1945:32)
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/rolldown/dist/shared/error-CP8smW_P.mjs:48:18)
+    at unwrapBindingResult (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/rolldown/dist/shared/error-CP8smW_P.mjs:18:128)
+    at #build (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/rolldown/dist/shared/rolldown-build-4YnQkA76.mjs:3311:34)
+    at async buildEnvironment (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/vite/dist/node/chunks/node.js:32794:64)
+    at async Object.build (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/vite/dist/node/chunks/node.js:33216:19)
+    at async Object.buildApp (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/vite/dist/node/chunks/node.js:33213:153)
+    at async CAC.<anonymous> (file:///C:/Users/ASUS/Desktop/Govind/portfolio-main/Portfolio%20-%20Modern/node_modules/vite/dist/node/cli.js:778:3) {
+  errors: [Getter/Setter]
+}

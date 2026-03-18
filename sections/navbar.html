@@ -1,0 +1,41 @@
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="glass-strong">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-2xl font-display font-bold gradient-text hoverable">Govind Malav</a>
+
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#about"
+                            class="nav-link text-sm font-medium hover:text-primary transition hoverable">About</a>
+                        <a href="#skills"
+                            class="nav-link text-sm font-medium hover:text-primary transition hoverable">Skills</a>
+                        <a href="#projects"
+                            class="nav-link text-sm font-medium hover:text-primary transition hoverable">Projects</a>
+                        <a href="#experience"
+                            class="nav-link text-sm font-medium hover:text-primary transition hoverable">Experience</a>
+                        <a href="#achievements"
+                            class="nav-link text-sm font-medium hover:text-primary transition hoverable">Achievements</a>
+                        <a href="#contact"
+                            class="px-6 py-2 gradient-border rounded-full text-sm font-medium hoverable">Contact Me</a>
+                    </div>
+
+                    <button class="md:hidden text-white hoverable" onclick="toggleMenu()">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden glass-strong border-t border-gray-800">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#about" class="block text-sm font-medium hover:text-primary transition">About</a>
+                <a href="#skills" class="block text-sm font-medium hover:text-primary transition">Skills</a>
+                <a href="#projects" class="block text-sm font-medium hover:text-primary transition">Projects</a>
+                <a href="#experience" class="block text-sm font-medium hover:text-primary transition">Experience</a>
+                <a href="#achievements" class="block text-sm font-medium hover:text-primary transition">Achievements</a>
+                <a href="#contact" class="block text-sm font-medium text-primary">Contact Me</a>
+            </div>
+        </div>
+    </nav>
