@@ -47,6 +47,33 @@ hoverables.forEach(el => {
     el.addEventListener('mouseleave', () => cursorOutline.classList.remove('hover'));
 });
 
+// ── Magnetic Buttons (Premium UI Effect) ─────────────────────────────────────
+const magneticElements = document.querySelectorAll('.hoverable.group, .magnetic, a[href="#contact"], .service-card, .achievement-card, .tech-icon');
+
+magneticElements.forEach(elem => {
+    elem.addEventListener('mousemove', (e) => {
+        const rect = elem.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        gsap.to(elem, {
+            x: x * 0.2,
+            y: y * 0.2,
+            duration: 0.5,
+            ease: "power2.out",
+        });
+    });
+
+    elem.addEventListener('mouseleave', () => {
+        gsap.to(elem, {
+            x: 0,
+            y: 0,
+            duration: 0.8,
+            ease: "elastic.out(1, 0.3)",
+        });
+    });
+});
+
 // ── Scroll: Progress Bar, Back-to-Top, Navbar ────────────────────────────────
 let isScrolling = false;
 window.addEventListener('scroll', () => {
