@@ -14,7 +14,7 @@ const camera   = new THREE.PerspectiveCamera(75, window.innerWidth / window.inne
 const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setPixelRatio(1); // Set to 1 for better performance, high pixel ratio on background hurts scroll speed
 document.getElementById('canvas-container').appendChild(renderer.domElement);
 
 // ── Particles ────────────────────────────────────────────────────────────────

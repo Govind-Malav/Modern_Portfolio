@@ -51,12 +51,16 @@ body {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    will-change: backdrop-filter;
+    transform: translateZ(0); /* Hardware acceleration */
 }
 
 .glass-strong {
     background: rgba(10, 10, 10, 0.9);
     backdrop-filter: blur(30px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    will-change: backdrop-filter;
+    transform: translateZ(0);
 }
 
 /* ── Text Utilities ─────────────────────────────────────────── */
